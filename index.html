@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce&Sabor</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logoo.png" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre nós</a></li>
+                    <li><a onclick="closeMenu()" href="#suporte">Contato</a></li>
+                    
+                </ul>
+                <!-- logo do menu retratil  -->
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/form.png" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+
+        </div>
+           
+    </nav>
+
+    <header id="home">        
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+
+                    <div class="text-content">
+                         <img data-aos="fade-up-left" class="logo" src="./assets/form.png" alt="">
+                        <h1 data-aos="fade-up-left">Confeitaria e decoração, criação, planejamento.</h1>
+                        <p data-aos="fade-up-left">Somos uma confeitaria especializada em <span>criação de bolos e doces.</span>.</p>
+                        <div data-aos="fade-up-left" class="buttons">
+                            <a href="#services"><button>Descubra nossos serviços</button></a>
+                            <a href="#suporte"><button>Saiba mais</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="interactive-image" class="image">
+                    <img src="./assets/cakee.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="servicesDesktop">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">SERVIÇOS</span>
+                    <h2>Oferecemos uma <span>variedade de serviços</span>, tais como:</h2>
+                </header>
+
+                <div data-aos="fade-up"
+                data-aos-duration="3000" class="container">
+                    <div class="box">
+                        <h3>Serviços de confeitaria</h3>
+                        <div class="additional-content">
+                            <p>Criação de bolos e doces personalizados para todas as ocasiões.</p>
+                            <a href="#service-um"><button>Veja mais</button></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Produção de doces personalizados</h3>
+                        <div class="additional-content">
+                            <p>Doces feitos sob medida para eventos e celebrações.</p>
+                            <a href="#service-dois"><button>Veja mais</button></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Montagem de cestas temáticas</h3>
+                        <div class="additional-content">
+                            <p>Cestas de doces temáticas para presentear.</p>
+                            <a href="#service-tres"><button>Veja mais</button></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <h3>Serviço de entrega de bolos e doces</h3>
+                        <div class="additional-content">
+                            <p>Entrega rápida e segura dos nossos produtos.</p>
+                            <a href="#service-quatro"><button>Veja mais</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="icone" src="./assets/form.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">SERVIÇOS</span>
+                    <h2>Operamos em várias <span>áreas de confeitaria</span>, tais como:</h2>
+                </header>
+
+                <div class="cards">
+                    <img class="iconeDamatta" src="./assets/form.png" alt="">
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Serviços de confeitaria</h3>
+                        <p>Criação de bolos e doces personalizados para todas as ocasiões.</p>
+                        <a href="#service-um">Veja mais <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Produção de doces personalizados</h3>
+                        <p>Doces feitos sob medida para eventos e celebrações.</p>
+                        <a href="#service-dois">Veja mais <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Montagem de cestas temáticas</h3>
+                        <p>Cestas de doces temáticas para presentear.</p>
+                        <a href="#service-tres">Veja mais <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+                    <div data-aos="fade-up-left" class="card">
+                        <h3>Serviço de entrega de bolos e doces</h3>
+                        <p>Entrega rápida e segura dos nossos produtos.</p>
+                        <a href="#service-quatro">Veja mais <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="service-um" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right">Confeitaria <span>personalizada</span></h2>
+                        <h3 data-aos="fade-up-right">Nossa confeitaria personalizada é um <span>serviço especial</span> onde visamos criar doces e bolos que <span>atendam às suas necessidades específicas e preferências pessoais.</span>. Nossos serviços incluem:</h3>
+
+                        <div data-aos="fade-up-right" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Planejamento e Criação de Receita</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Seleção de matéria prima </p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Gestão de Custos e ingredientes</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Controle de Qualidade</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Escolhas de ingredientes naturais</p>
+                        </div>
+
+                        <div data-aos="fade-up-right"  class="button">
+                            <a target="_blank" href="#"><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div data-aos="fade-left" class="image">
+                <img src="./assets/cake.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="service-dois" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right">Doces <span>personalizados</span></h2>
+                        <h3 data-aos="fade-up-right">Nossa produção de doces personalizados oferece a criação de doces que <span>atendam ao tema do seu evento.</span> Nossos serviços incluem:</h3>
+                        <div data-aos="fade-up-right" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Consulta para entender o tema e as necessidades do evento.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Criação de doces exclusivos que complementem a decoração do evento.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Uso de ingredientes frescos e de alta qualidade.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Entrega no local do evento, garantindo a máxima frescura.</p>
+                        </div>
+
+                        <div data-aos="fade-up-left" class="button">
+                            <a target="_blank" href="#"><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-right" class="image">
+                    <img src="./assets/candy.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section id="service-tres" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right">Cestas <span>temáticas</span></h2>
+                        <h3 data-aos="fade-up-right">Oferecemos um serviço de montagem de cestas temáticas para presentear. <span>Cestas ideais para qualquer ocasião especial.</span> Nossos serviços incluem:</h3>
+                        <div data-aos="fade-up-right" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Escolha de uma variedade de doces para compor a cesta.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Personalização da cesta conforme o tema desejado.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Embalagem bonita e atraente para impressionar quem receber.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Entrega pontual no local desejado.</p>
+                        </div>
+
+                        <div data-aos="fade-up-right" class="button">
+                            <a target="_blank" href="#"><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left" class="image">
+                    <img src="./assets/cestas.png" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section id="service-quatro" class="topic">
+        <div class="content">
+                <div class="wrapper">
+                    <div class="text">
+                        <h2 data-aos="fade-up-right">Entrega de <span>bolos e doces</span></h2>
+                        <h3 data-aos="fade-up-right">Nosso serviço de entrega de bolos e doces garante que seus pedidos <span>cheguem frescos e na hora certa.</span> Nossos serviços incluem:</h3>
+                        <div data-aos="fade-up-right" class="topics">
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Sistema de pedidos online para maior conveniência.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Embalagem segura para manter a integridade dos doces.</p>
+                            <p><ion-icon name="radio-button-on-outline"></ion-icon> Entrega rápida e eficiente na data e horário combinados.</p>
+                        </div>
+
+                        <div data-aos="fade-up-left" class="button">
+                            <a target="_blank" href="#"><button>Solicite um orçamento</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            <div data-aos="fade-right" class="image">
+                <img src="./assets/cupcake.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="suporte">
+        <div class="wrapper">
+            <div class="content">
+                <div data-aos="fade-up-left" class="whatsapp">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+    
+                    <p>Faça seu <span>pedido diretamente pelo seu whatsapp.</span></p>
+                </div>
+    
+                <div data-aos="fade-up" class="image">
+                    <img src="./assets/cutes.png" alt="">
+                </div>
+    
+                <div data-aos="fade-up-right" class="ajuda">
+                    <span><ion-icon name="flash-outline"></ion-icon> Suporte rápido</span>
+                    <h3>Precisa de <span>ajuda?</span></h3>
+                    <p>Nossa equipe <span>está pronta</span> para conversar com você!</p>
+                    <a target="_blank" href="#"><button>Entrar em contato</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up">
+                    <span class="span">SOBRE NÓS</span>
+                    <h2>Descubra mais <span>sobre nossa confeitaria</span></h2>
+                </header>
+
+                <div data-aos="fade-up-right" class="container">
+                    <div class="text">
+                        <h3>Confeitaria Doce&Sabor</h3>
+                        <p>Fundada em 2020, nossa confeitaria tem como foco criar e confeitar bolos e doces <span>deliciosos e personalizados.</span> Nos esforçamos para <span>superar as expectativas dos nossos clientes</span> e tornar cada <span>celebração mais especial</span>.</p>
+                    </div>
+
+                    <div data-aos="fade-up-left" class="image">
+                        <img src="./assets/doce.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <span>CLIENTES</span>
+                    <h2>Nossos queridinhos</h2>
+                </header>
+
+                <div class="slide um">
+                    <div class="slide-text">
+                      <img src="./assets/clientes/cake1.png" alt="">
+                      <img src="./assets/clientes/macaron.png" alt="">
+                      <img src="./assets/clientes/cupcake1.png" alt="">
+                      <img src="./assets/clientes/bigradeiro.png" alt="">
+                     
+                    </div>
+                    <div class="slide-text">
+                        <img src="./assets/clientes/cake1.png" alt="">
+                        <img src="./assets/clientes/macaron.png" alt="">
+                        <img src="./assets/clientes/cupcake1.png" alt="">
+                        <img src="./assets/clientes/bigradeiro.png" alt="">
+                       
+                      </div>
+                </div>
+                <div class="slide dois">
+                    <div class="slide-text">
+                        <img src="./assets/clientes/cake1.png" alt="">
+                        <img src="./assets/clientes/macaron.png" alt="">
+                        <img src="./assets/clientes/cupcake1.png" alt="">
+                        <img src="./assets/clientes/bigradeiro.png" alt="">
+                       
+                      </div>
+                      <div class="slide-text">
+                          <img src="./assets/clientes/cake1.png" alt="">
+                          <img src="./assets/clientes/macaron.png" alt="">
+                          <img src="./assets/clientes/cupcake1.png" alt="">
+                          <img src="./assets/clientes/bigradeiro.png" alt="">
+                       
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div class="content">
+                <img class="logo" src="./assets/logoo.png" alt="">
+
+                <div class="navigation">
+                    <h3>Navegação</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#sobre">Sobre</a></p>
+                    <p><a href="#services">Serviços</a></p>
+                    <p><a href="#suporte">Contato</a></p>
+                </div>
+    
+                <div class="contato">
+                    <h3>Venha nos conhecer</h3>
+                    <p>Rua dos doces N°1000, <br> CEP: 000.00-000 - Confeitopolis AZ</p>
+                    <p>contato@docesabor.com.br</p>
+                    <p><a target="_blank" href="tel:+55-11-96279-5416">(11) 96279-5416</a></p>
+                </div>
+    
+                <div class="redes-sociais">
+                    <h3>Social</h3>
+                    <div class="icons">
+                        <a target="_blank" href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a target="_blank" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a target="_blank" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section id="author">
+        <div class="wrapper">
+            <div class="content">
+                <p>© Todos os direitos reservados - Doce&Sabor</p>
+
+                <a target="_blank" href="#">
+                    <p class="author">
+                        Desenvolvido por
+                        <img src="#" alt="">
+                        Domingos Tech&Code
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1500,
+            }
+        );
+      </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 
