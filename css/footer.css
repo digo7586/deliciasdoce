@@ -50,11 +50,6 @@ footer .content p {
     color: var(--paragraphy);
 }
 
-footer p .dds {
-    color: #ffbe00;
-    display: inline;
-}
-
 footer .content p a {
     color: #9b9b9b;
 }
