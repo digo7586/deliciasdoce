@@ -22,6 +22,10 @@ footer .logo {
     margin-bottom: 2rem;
 }
 
+footer hr {
+width: 100%;
+}
+
 footer .content {
     text-align: left;
 
